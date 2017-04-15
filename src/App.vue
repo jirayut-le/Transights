@@ -14,7 +14,6 @@ export default {
     'navbar': navbar,
     'headerBar': headerBar
   },
-  name: 'app'
 }
 </script>
 
