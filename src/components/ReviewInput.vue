@@ -59,7 +59,7 @@ export default {
     },
     methods: {
         submit() {
-                if(this.dataUserLogin[0].userID != null){
+                if(this.dataUserLogin[0] != null && this.dataUserLogin[0].userID != null){
                     console.log('user not null')
                     axios.post('http://localhost:7777/inputReview', {
                         userID : this.dataUserLogin[0].userID,
