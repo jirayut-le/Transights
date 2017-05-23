@@ -12,8 +12,9 @@
                             <p class="title is-3">{{ dataPlace.PlaceName }}</p>
                             <p class="subtitle is-5">@{{ dataPlace.stationName }} Station</p>
                             <p class="subtitle is-6"> {{ dataPlaceCon[0].DES }}</p>
-                            <p> TYPE : {{ dataPlaceCon[0].TYPE }}</p>
-                            <p> OPEN HOUR {{ dataPlaceCon[0].OPEN }} - {{ dataPlaceCon[0].CLOSE }} </p>
+                            <p>TYPE : {{ dataPlaceCon[0].TYPE }}</p>
+                            <p>OPEN HOUR {{ dataPlaceCon[0].OPEN }} - {{ dataPlaceCon[0].CLOSE }} </p>
+                            <p>Address : {{ dataPlaceCon[0].STREET }} {{ dataPlaceCon[0].DISTRICT }} {{ dataPlaceCon[0].SUBDISTRICT }} {{ dataPlaceCon[0].POSTCODE }}</p>
                             <p>TEL : {{ dataPlaceCon[0].TEL }}</p>
                             <p>Website : <a :href="dataPlaceCon[0].WEB"> {{ dataPlaceCon[0].WEB }}</a> </p>
                         </div>

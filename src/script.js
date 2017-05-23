@@ -59,7 +59,7 @@ app.post('/user', (req,res) => {
 
 app.post('/searchUsername',(req,res) => {
     let user = req.body.username;
-    connection.query('SELECT COUNT(user.userID) as numUser  FROM user WHERE user.userName = "'+user+'"',function(err,result) {
+    connection.query('SELECT COUNT(user.userID) as numUser FROM user WHERE user.userName = "'+user+'"',function(err,result) {
         res.send(result);
         sendUser = result;
 
@@ -100,7 +100,7 @@ app.post('/price', (req, res) => {
 
 app.post('/placeModal', (req, res) => {
     let placeName = req.body.placeName;
-    connection.query('SELECT * FROM description WHERE description.PlaceName = "'+ placeName +'"', (err, result) => {
+    connection.query('SELECT * FROM description NATURAL JOIN address WHERE description.PlaceName = "'+ placeName +'"', (err, result) => {
         res.send(result)
     })
 })
@@ -139,7 +139,6 @@ app.post('/editReview', (req, res) => {
 app.get('/price', (req, res) => {
     res.json(p);
 })
-
 
 app.get('/time', (req, res) => {
     res.json(tp);
