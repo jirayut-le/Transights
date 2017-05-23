@@ -61,7 +61,8 @@ export default {
             })
         },
         checkSameUser(item) {
-            if(this.dataUserLogin[0].userID == item.userID)
+            console.log(this.dataUserLogin[0])
+            if(this.dataUserLogin[0] != null && this.dataUserLogin[0].userID == item.userID)
                 return true
             else 
                 return false

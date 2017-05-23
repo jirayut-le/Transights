@@ -92,6 +92,10 @@ export default {
                 this.registerLastname = ''
                 this.registerUsername = ''
                 this.registerPassword = ''
+
+                axios.post('http://localhost:7777/user', {
+                    username: ""
+                })
             }
             else { 
                 e.preventDefault();
@@ -146,9 +150,6 @@ export default {
                   this.openNotificationWithType('Register failed','Username has already used','danger')
                 }
             })
-        },
-        sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
         },
         close() {
             this.active = false
