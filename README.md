@@ -11,6 +11,27 @@ The website show sight-seeing naer by BTS transpotation of Bangkok, Thailand
  - 5810546617 Jirayut Leeupathumvong
  - 5810546676 Tunya Wittayasiripaiboon
 
+## Requirement
+``` bash
+node : version >= 4.0.0
+npm : version >= 3.0.0
+
+# check version of node
+node -v
+
+# install node
+download Node.js from https://nodejs.org/en/download/
+
+# updata node last version
+npm update -g
+
+# check version of npm
+npm -v
+
+# update npm last version
+npm i -g npm
+
+```
 
 ## Build Setup the Website
 
