@@ -1,8 +1,18 @@
-# sightseeing
+# Transights Website
 
-> A Vue.js project
+The website show sight-seeing naer by BTS transpotation of Bangkok, Thailand 
 
-## Build Setup
+> A Database project of Software and Knowledge Engineering Students.
+> A Vue.js project / Node.js
+
+## Members
+
+ - 5810546013 Rakkan Tiasakul
+ - 5810546617 Jirayut Leeupathumvong
+ - 5810546676 Tunya Wittayasiripaiboon
+
+
+## Build Setup the Website
 
 ``` bash
 # install dependencies
@@ -14,17 +24,15 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Build Node.js
+
+``` bash
+# go to repository src
+cd src
+
+# build the script
+node script.js
+
+```
